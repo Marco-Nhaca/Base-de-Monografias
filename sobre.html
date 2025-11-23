@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Sobre Nós - Base De Monografias</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header-link">
+            <h1>Base De Monografias</h1>
+        </a>
+        <div class="header-controls">
+            <a href="sobre.html" class="section-button">Sobre Nós</a>
+            <div class="search-container">
+                <input type="text" id="busca-input" placeholder="Digite um tema de monografia">
+                <button id="botao-busca" onclick="iniciarBusca()" title="Buscar">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-list">
+            <h1 class="section-title">Sobre Nós</h1>
+            
+            <article>
+                <h2>Nossa Missão</h2>
+                <p>A plataforma "Base De Monografias" nasceu da necessidade de criar um espaço centralizado e acessível para estudantes do ensino superior em Moçambique. Nosso principal objetivo é facilitar a partilha de conhecimento, permitindo que alunos encontrem inspiração e referências de qualidade para os seus próprios projetos de monografia. Acreditamos que, ao conectar estudantes com trabalhos já concluídos, podemos acelerar o processo de pesquisa e elevar o padrão acadêmico em todo o país.</p>
+            </article>
+
+            <article>
+                <h2>Entre em Contato</h2>
+                <p>Tem alguma dúvida, sugestão ou gostaria de contribuir para o nosso acervo? Adoraríamos ouvir você!</p>
+                <p><strong>Telefone:</strong> +258 86 066 3666</p>
+                <p><strong>Email:</strong> marco.nhaca@gmail.com</p>
+                
+                <form class="contact-form" action="mailto:marco.nhaca@gmail.com" method="post" enctype="text/plain">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva aqui a sua sugestão ou dúvida..."></textarea>
+                    <button type="submit" class="section-button">Enviar Mensagem</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/users/Marco-Nhaca/projects/1/views/1?system_template=kanban">Github</a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/marco.nhaca">Facebook</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

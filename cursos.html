@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cursos Superiores - Base De Monografias</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="header-link">Base De Monografias</a></h1>
+        <div>
+            <!-- O campo de busca pode não ser funcional nesta página, mas mantém o layout -->
+            <input type="text" id="busca-input" placeholder="Digite uma tema de monografia">
+            <button id="botao-busca">Buscar</button>
+            <!-- Filtro em tempo real para cursos -->
+            <input type="text" id="filtro-cursos-input" placeholder="Digite um curso para filtrar...">
+        </div>
+    </header>
+
+    <main>
+        <div class="button-container">
+            <a href="index.html" class="section-button">universidades</a>
+            <a href="cursos.html" class="section-button">cursos</a>
+        </div>
+        <section class="course-list">
+            <h1>Cursos Superiores em Moçambique</h1>
+            <article><h2>Medicina</h2></article>
+            <article><h2>Direito</h2></article>
+            <article><h2>Engenharia Informática</h2></article>
+            <article><h2>Engenharia Civil</h2></article>
+            <article><h2>Engenharia Mecânica</h2></article>
+            <article><h2>Engenharia Electrotécnica</h2></article>
+            <article><h2>Arquitectura e Planeamento Físico</h2></article>
+            <article><h2>Gestão de Empresas</h2></article>
+            <article><h2>Economia</h2></article>
+            <article><h2>Contabilidade e Auditoria</h2></article>
+            <article><h2>Relações Internacionais e Diplomacia</h2></article>
+            <article><h2>Psicologia</h2></article>
+            <article><h2>Ciências da Comunicação</h2></article>
+            <article><h2>Turismo</h2></article>
+            <article><h2>Agronomia</h2></article>
+            <article><h2>Ciências Biológicas</h2></article>
+            <article><h2>Química</h2></article>
+            <article><h2>Física</h2></article>
+            <article><h2>Matemática e Estatística</h2></article>
+            <article><h2>Ciências da Educação</h2></article>
+            <article><h2>Enfermagem</h2></article>
+            <article><h2>Farmácia</h2></article>
+            <article><h2>Medicina Dentária</h2></article>
+            <article><h2>Medicina Veterinária</h2></article>
+            <article><h2>Sociologia</h2></article>
+            <article><h2>Antropologia</h2></article>
+            <article><h2>História</h2></article>
+            <article><h2>Geografia</h2></article>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-location">
+            Moçambique
+        </div>
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/users/Marco-Nhaca/projects/1/views/1?system_template=kanban">Github</a>
+            </li>
+            <li>
+                <a href="https://web.facebook.com/marco.nhaca">Facebook</a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Modal/Pop-up para Universidades -->
+    <div id="modal-universidades" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-course-title"></h2>
+            <div id="lista-universidades-modal"></div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top-btn" title="Voltar ao topo">↑</button>
+</body>
+</html>
